@@ -76,7 +76,7 @@ public class Alphabet implements AlphabetDictionary {
      *
      * @param position the search letter position.
      * @return the letter of the alphabet by its position in it
-     * @throws IndexOutOfBoundsException if the position argument is negative or it exceeds the alphabet length.
+     * @throws IndexOutOfBoundsException if the position argument is negative, or it exceeds the alphabet length.
      */
     public char getLetterByPosition(int position) throws IndexOutOfBoundsException {
         if (position < 0 || position > alphabet.length()) {
