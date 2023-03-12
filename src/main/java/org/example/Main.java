@@ -27,8 +27,9 @@ public class Main {
         CaesarEncoder caesarEncoder = new CaesarEncoder(englishAlphabet);
 
         try {
-            System.out.println("ABAB");
-            System.out.println(caesarEncoder.encode("ABAB", 53));
+            var hello = "Hello world";
+            System.out.println(hello);
+            System.out.println(caesarEncoder.encode(hello, 53));
         } catch (LetterIsNotInAlphabetException e) {
             System.out.println("There is a bad letter. Please use English letters only.");
         }
