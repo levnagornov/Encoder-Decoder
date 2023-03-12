@@ -1,5 +1,12 @@
 package org.example;
 
+import org.example.alphabet.Alphabet;
+import org.example.alphabet.AlphabetDictionary;
+import org.example.encoder.CaesarEncoder;
+import org.example.exception.EmptyAlphabetException;
+import org.example.exception.InvalidCharacterInAlphabetException;
+import org.example.exception.LetterIsNotInAlphabetException;
+import org.example.exception.NotUniqueLettersInAlphabetException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,9 +17,9 @@ class CaesarEncoderTest {
     private CaesarEncoder caesarEncoder;
 
     @BeforeEach
-    void setUp() throws EmptyAlphabetException, InvalidCharacterInAlphabetException, NotUniqueLettersInAlphabetException {
-        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        caesarEncoder = new CaesarEncoder(alphabet);
+    void setUp() throws NotUniqueLettersInAlphabetException, EmptyAlphabetException, InvalidCharacterInAlphabetException {
+        AlphabetDictionary englishAlphabet = new Alphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+        caesarEncoder = new CaesarEncoder(englishAlphabet);
     }
 
     @Test
@@ -63,35 +70,5 @@ class CaesarEncoderTest {
     @Test
     void encodeThrowsLetterIsNotInAlphabetException() {
         assertThrows(LetterIsNotInAlphabetException.class, () -> caesarEncoder.encode("ABCЯ", 1));
-    }
-
-    @Test
-    void constructorThrowsEmptyAlphabetException() {
-        var emptyAlphabet = "";
-        assertThrows(EmptyAlphabetException.class, () -> new CaesarEncoder(emptyAlphabet));
-    }
-
-    @Test
-    void constructorThrowsInvalidCharacterInAlphabetExceptionOnNumberInAlphabet() {
-        var invalidAlphabet = "ABC1";
-        assertThrows(InvalidCharacterInAlphabetException.class, () -> new CaesarEncoder(invalidAlphabet));
-    }
-
-    @Test
-    void constructorThrowsInvalidCharacterInAlphabetExceptionOnPunctuationSignInAlphabet() {
-        var invalidAlphabet = "ABC.";
-        assertThrows(InvalidCharacterInAlphabetException.class, () -> new CaesarEncoder(invalidAlphabet));
-    }
-
-    @Test
-    void constructorThrowsInvalidCharacterInAlphabetExceptionOnSpaceInAlphabet() {
-        var invalidAlphabet = "ABC ";
-        assertThrows(InvalidCharacterInAlphabetException.class, () -> new CaesarEncoder(invalidAlphabet));
-    }
-
-    @Test
-    void constructorThrowsNotUniqueLettersInAlphabetException() {
-        var invalidAlphabet = "ABBA";
-        assertThrows(NotUniqueLettersInAlphabetException.class, () -> new CaesarEncoder(invalidAlphabet));
     }
 }

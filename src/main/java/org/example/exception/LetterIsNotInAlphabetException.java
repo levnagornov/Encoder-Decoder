@@ -1,4 +1,4 @@
-package org.example;
+package org.example.exception;
 
 public class LetterIsNotInAlphabetException extends Exception {
     public LetterIsNotInAlphabetException(String message) {

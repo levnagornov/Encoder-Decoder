@@ -1,4 +1,4 @@
-package org.example;
+package org.example.exception;
 
 public class NotUniqueLettersInAlphabetException extends Exception {
     public NotUniqueLettersInAlphabetException(String message) {
