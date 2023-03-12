@@ -7,7 +7,7 @@ import org.example.exception.EmptyAlphabetException;
 import org.example.exception.InvalidCharacterInAlphabetException;
 import org.example.exception.LetterIsNotInAlphabetException;
 import org.example.exception.NotUniqueLettersInAlphabetException;
-import org.example.menu.ConsoleMenu;
+import org.example.menu.MainMenu;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,10 +35,16 @@ public class Main {
     }
 
     public static void runApp() {
-        ConsoleMenu.printGreeting();
+        printGreeting();
         var isAppRunning = true;
         while (isAppRunning) {
-            isAppRunning = ConsoleMenu.runMainMenu();
+            isAppRunning = new MainMenu().run();
         }
+    }
+    
+    public static void printGreeting() {
+        System.out.println("*******************************");
+        System.out.println("*    My EncoderDecoder app    *");
+        System.out.println("*******************************");
     }
 }
