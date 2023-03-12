@@ -30,7 +30,7 @@ public class EncodeMenu implements Menu {
             }
             default -> {
                 printInvalidOptionTip();
-                return new EncodeMenu().run();
+                return this.run();
             }
         }
     }

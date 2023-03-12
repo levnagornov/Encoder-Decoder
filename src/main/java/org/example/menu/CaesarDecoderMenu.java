@@ -38,7 +38,7 @@ public class CaesarDecoderMenu implements Menu {
             }
             default -> {
                 printInvalidOptionTip();
-                return new CaesarDecoderMenu().run();
+                return this.run();
             }
         }
     }

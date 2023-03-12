@@ -38,7 +38,7 @@ public class CaesarEncoderMenu implements Menu {
             }
             default -> {
                 printInvalidOptionTip();
-                return new CaesarEncoderMenu().run();
+                return this.run();
             }
         }
     }

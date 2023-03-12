@@ -29,7 +29,7 @@ public class DecodeMenu implements Menu {
             }
             default -> {
                 printInvalidOptionTip();
-                return new DecodeMenu().run();
+                return this.run();
             }
         }
     }

@@ -34,7 +34,7 @@ public class MainMenu implements Menu {
             }
             default -> {
                 printInvalidOptionTip();
-                return new MainMenu().run();
+                return this.run();
             }
         }
     }
