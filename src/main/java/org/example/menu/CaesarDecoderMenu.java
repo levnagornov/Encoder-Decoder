@@ -45,7 +45,7 @@ public class CaesarDecoderMenu implements Menu {
 
     @Override
     public void printHeader() {
-        System.out.println("");
+        System.out.println();
         System.out.println("< Caesar decoder menu >");
     }
 }

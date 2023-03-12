@@ -37,7 +37,7 @@ public class EncodeMenu implements Menu {
 
     @Override
     public void printHeader() {
-        System.out.println("");
+        System.out.println();
         System.out.println("< Encode menu >");
     }
 }

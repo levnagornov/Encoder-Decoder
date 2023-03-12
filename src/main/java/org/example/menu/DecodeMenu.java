@@ -36,7 +36,7 @@ public class DecodeMenu implements Menu {
 
     @Override
     public void printHeader() {
-        System.out.println("");
+        System.out.println();
         System.out.println("< Decode menu >");
     }
 }

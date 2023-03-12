@@ -50,7 +50,7 @@ public class MainMenu implements Menu {
 
     @Override
     public void printHeader() {
-        System.out.println("");
+        System.out.println();
         System.out.println("< Main menu >");
     }
 }
