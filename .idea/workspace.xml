@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78bf87f-8f57-4367-af3c-f07ba3bf1d15" name="Changes" comment="feat: add tests, add alphabet, add console menu">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/menu/ConsoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/menu/ConsoleMenu.java" afterDir="false" />
+    <list default="true" id="c78bf87f-8f57-4367-af3c-f07ba3bf1d15" name="Changes" comment="feat: add greeting and entry method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CaesarEncoderTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="EncoderDecoder" />
@@ -132,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CaesarEncoderTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AlphabetTest" />
         <item itemvalue="JUnit.CaesarEncoderTest.constructorThrowsEmptyAlphabet" />
       </list>
@@ -169,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678630567080</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add greeting and entry method">
+      <created>1678631040671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678631040671</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +194,8 @@
     <MESSAGE value="init: add junit" />
     <MESSAGE value="feat: add caesar encoder" />
     <MESSAGE value="feat: add tests, add alphabet, add console menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add tests, add alphabet, add console menu" />
+    <MESSAGE value="feat: add greeting and entry method" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add greeting and entry method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
