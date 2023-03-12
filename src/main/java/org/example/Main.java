@@ -11,10 +11,7 @@ import org.example.menu.ConsoleMenu;
 
 public class Main {
     public static void main(String[] args) {
-        var isAppRunning = true;
-        while (isAppRunning) {
-            isAppRunning = ConsoleMenu.runMainMenu();
-        }
+        runApp();
     }
 
     public static void tryCaesarEncode() {
@@ -34,6 +31,14 @@ public class Main {
             System.out.println(caesarEncoder.encode("ABAB", 53));
         } catch (LetterIsNotInAlphabetException e) {
             System.out.println("There is a bad letter. Please use English letters only.");
+        }
+    }
+
+    public static void runApp() {
+        ConsoleMenu.printGreeting();
+        var isAppRunning = true;
+        while (isAppRunning) {
+            isAppRunning = ConsoleMenu.runMainMenu();
         }
     }
 }

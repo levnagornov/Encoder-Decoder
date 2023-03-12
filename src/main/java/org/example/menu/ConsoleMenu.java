@@ -11,6 +11,13 @@ public class ConsoleMenu {
         System.out.print(text);
     }
 
+    public static void printGreeting() {
+        ConsoleMenu.println("*******************************");
+        ConsoleMenu.println("*    My EncoderDecoder app    *");
+        ConsoleMenu.println("*******************************");
+        ConsoleMenu.println("");
+    }
+
     private static void printMainMenu() {
         ConsoleMenu.println("< Main menu >");
         ConsoleMenu.println("Select an option:");
