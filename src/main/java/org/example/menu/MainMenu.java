@@ -1,6 +1,7 @@
 package org.example.menu;
 
 public class MainMenu implements Menu {
+    @SuppressWarnings("unused")
     public enum Options implements TextDescription {
         Encode("Encode"),
         Decode("Decode"),

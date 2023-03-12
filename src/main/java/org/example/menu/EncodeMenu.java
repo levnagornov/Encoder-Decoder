@@ -1,6 +1,7 @@
 package org.example.menu;
 
 public class EncodeMenu implements Menu {
+    @SuppressWarnings("unused")
     public enum Options implements TextDescription {
         CaesarEncode("Caesar encoder"),
         BackToMainMenu("Back to Main menu");
