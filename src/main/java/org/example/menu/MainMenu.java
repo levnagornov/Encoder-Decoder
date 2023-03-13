@@ -25,10 +25,10 @@ public class MainMenu implements Menu {
         var usersChoice = getIntChoice();
         switch (usersChoice) {
             case 1 -> {
-                return new EncodeMenu().run();
+                return MenuManager.getMenu(EncodeMenu.class).run();
             }
             case 2 -> {
-                return new DecodeMenu().run();
+                return MenuManager.getMenu(DecodeMenu.class).run();
             }
             case 3 -> {
                 return exit();

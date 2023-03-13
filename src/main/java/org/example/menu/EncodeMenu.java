@@ -1,5 +1,7 @@
 package org.example.menu;
 
+import java.util.Map;
+
 public class EncodeMenu implements Menu {
     @SuppressWarnings("unused")
     public enum Options implements TextDescription {
@@ -24,10 +26,10 @@ public class EncodeMenu implements Menu {
         var usersChoice = getIntChoice();
         switch (usersChoice) {
             case 1 -> {
-                return new CaesarEncoderMenu().run();
+                return MenuManager.getMenu(CaesarEncoderMenu.class).run();
             }
             case 2 -> {
-                return new MainMenu().run();
+                return MenuManager.getMenu(MainMenu.class).run();
             }
             default -> {
                 printInvalidOptionTip();

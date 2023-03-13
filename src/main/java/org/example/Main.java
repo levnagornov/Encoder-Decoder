@@ -8,6 +8,7 @@ import org.example.exception.InvalidCharacterInAlphabetException;
 import org.example.exception.LetterIsNotInAlphabetException;
 import org.example.exception.NotUniqueLettersInAlphabetException;
 import org.example.menu.MainMenu;
+import org.example.menu.MenuManager;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,10 +40,10 @@ public class Main {
         printGreeting();
         var isAppRunning = true;
         while (isAppRunning) {
-            isAppRunning = new MainMenu().run();
+            isAppRunning = MenuManager.getMenu(MainMenu.class).run();
         }
     }
-    
+
     public static void printGreeting() {
         System.out.println("*******************************");
         System.out.println("*    My EncoderDecoder app    *");

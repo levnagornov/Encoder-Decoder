@@ -27,15 +27,15 @@ public class CaesarEncoderMenu implements Menu {
             case 1 -> {
                 // TODO: Caesar Encoder - encode user string in the console
                 System.out.println("Encode string - done");
-                return new MainMenu().run();
+                return MenuManager.getMenu(MainMenu.class).run();
             }
             case 2 -> {
                 // TODO: Caesar Encoder - encode user txt file
                 System.out.println("Encode text file - done");
-                return new MainMenu().run();
+                return MenuManager.getMenu(MainMenu.class).run();
             }
             case 3 -> {
-                return new EncodeMenu().run();
+                return MenuManager.getMenu(EncodeMenu.class).run();
             }
             default -> {
                 printInvalidOptionTip();

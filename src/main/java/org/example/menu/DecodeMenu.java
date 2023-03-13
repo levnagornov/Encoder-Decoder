@@ -23,10 +23,10 @@ public class DecodeMenu implements Menu {
         var usersChoice = getIntChoice();
         switch (usersChoice) {
             case 1 -> {
-                return new CaesarDecoderMenu().run();
+                return MenuManager.getMenu(CaesarDecoderMenu.class).run();
             }
             case 2 -> {
-                return new MainMenu().run();
+                return MenuManager.getMenu(MainMenu.class).run();
             }
             default -> {
                 printInvalidOptionTip();

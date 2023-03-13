@@ -27,15 +27,15 @@ public class CaesarDecoderMenu implements Menu {
             case 1 -> {
                 // TODO: Caesar Decoder - decode user string in the console
                 System.out.println("Decode a string - done");
-                return new MainMenu().run();
+                return MenuManager.getMenu(MainMenu.class).run();
             }
             case 2 -> {
                 // TODO: Caesar Decoder - decode user txt file
                 System.out.println("Decode a text file - done");
-                return new MainMenu().run();
+                return MenuManager.getMenu(MainMenu.class).run();
             }
             case 3 -> {
-                return new DecodeMenu().run();
+                return MenuManager.getMenu(DecodeMenu.class).run();
             }
             default -> {
                 printInvalidOptionTip();
